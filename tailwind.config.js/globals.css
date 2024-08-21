@@ -1,0 +1,19 @@
+module.exports = {
+    content: [
+      "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  }
+  @tailwind base;
+@tailwind components;
+@tailwind utilities;
+import '../styles/globals.css';
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+
+export default MyApp;
